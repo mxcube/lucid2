@@ -51,9 +51,8 @@ def find_loop(filename, debug=True, pixels_per_mm_horizontal=None, chi_angle=0, 
               detected coordinate X and coordinate y take the value -1.
      """
 # Archive the image
-     #debug=False
      if archiveDir is not None:
-        (file_descriptor, fileBase) = tempfile.mkstemp(prefix="lucid2_id29_", dir=archiveDir)
+        (file_descriptor, fileBase) = tempfile.mkstemp(prefix="lucid2_", dir=archiveDir)
         os.close(file_descriptor)
         suffix = os.path.splitext(filename)[1]
         shutil.copy(filename, fileBase + suffix)
