@@ -3,7 +3,6 @@
 import os
 import cv
 import math
-import pylab
 import shutil
 import tempfile
 import scipy.misc
